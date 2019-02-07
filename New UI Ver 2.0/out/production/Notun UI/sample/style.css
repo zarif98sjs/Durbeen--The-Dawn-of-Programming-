@@ -1,0 +1,9 @@
+button {
+    -fx-background-color:  #9900cc;
+    -fx-text-fill:snow;
+    -fx-padding: 6 6 6 6;
+    -fx-border-color: #4d0099;
+    fx-border-radius: 4;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
