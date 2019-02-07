@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox prefHeight="288.0" prefWidth="228.0">
+         <children>
+            <HBox prefHeight="57.0" prefWidth="228.0">
+               <children>
+                  <Button fx:id="b1" mnemonicParsing="false" onAction="#init_motion" prefHeight="58.0" prefWidth="116.0" text="Motion" />
+                  <Button fx:id="b6" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="122.0" text="Events" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="57.0" prefWidth="228.0">
+               <children>
+                  <Button fx:id="b2" mnemonicParsing="false" onAction="#init_looks" prefHeight="58.0" prefWidth="116.0" text="Looks" />
+                  <Button fx:id="b7" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="122.0" text="Control" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="57.0" prefWidth="228.0">
+               <children>
+                  <Button fx:id="b3" mnemonicParsing="false" onAction="#init_sound" prefHeight="58.0" prefWidth="116.0" text="Sound" />
+                  <Button fx:id="b8" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="122.0" text="Sensing" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="124.0" prefHeight="57.0" prefWidth="228.0">
+               <children>
+                  <Button fx:id="b4" mnemonicParsing="false" prefHeight="58.0" prefWidth="116.0" text="Pen" />
+                  <Button fx:id="b9" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="122.0" text="Operators" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="181.0" prefHeight="57.0" prefWidth="228.0">
+               <children>
+                  <Button fx:id="b5" mnemonicParsing="false" prefHeight="58.0" prefWidth="116.0" text="Data" />
+                  <Button fx:id="b10" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="122.0" text="Blocks++" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ScrollPane layoutY="288.0" prefHeight="350.0" prefWidth="228.0">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="461.0" prefWidth="228.0">
+               <children>
+                  <VBox fx:id="dyn1" prefHeight="461.0" prefWidth="228.0">
+                     <children>
+                        <HBox fx:id="h1" prefHeight="45.0" prefWidth="228.0" />
+                        <HBox fx:id="h2" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="228.0" />
+                        <HBox fx:id="h3" layoutX="10.0" layoutY="55.0" prefHeight="45.0" prefWidth="228.0" />
+                        <HBox fx:id="h4" layoutX="10.0" layoutY="100.0" prefHeight="45.0" prefWidth="228.0" />
+                        <HBox fx:id="h5" layoutX="10.0" layoutY="145.0" prefHeight="45.0" prefWidth="228.0" />
+                        <HBox fx:id="h6" layoutX="10.0" layoutY="190.0" prefHeight="45.0" prefWidth="228.0" />
+                        <HBox fx:id="h7" layoutX="10.0" layoutY="235.0" prefHeight="45.0" prefWidth="228.0" />
+                        <HBox fx:id="h8" layoutX="10.0" layoutY="280.0" prefHeight="45.0" prefWidth="228.0" />
+                        <HBox fx:id="h9" layoutX="10.0" layoutY="325.0" prefHeight="45.0" prefWidth="228.0" />
+                        <HBox fx:id="h10" layoutX="10.0" layoutY="370.0" prefHeight="45.0" prefWidth="228.0" />
+                        <HBox fx:id="h11" layoutX="10.0" layoutY="415.0" prefHeight="45.0" prefWidth="228.0" />
+                        <HBox fx:id="h12" layoutX="10.0" layoutY="430.0" prefHeight="45.0" prefWidth="228.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="521.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/pic1.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="text1" layoutX="516.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</Pane>
