@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane fx:id="paneForImage" layoutX="600.0" layoutY="0.0" prefHeight="650.0" prefWidth="600.0">
+            <children>
+                <ImageView fx:id="back_image" fitHeight="430.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+                <Pane prefHeight="646.0" prefWidth="600.0">
+                    <children>
+                        <Button layoutX="14.0" layoutY="606.0" mnemonicParsing="false" text="deleteLast" />
+                        <Button layoutX="104" layoutY="606.0" mnemonicParsing="false" text="write" />
+                        <Button layoutX="214" layoutY="606.0" mnemonicParsing="false" text="get" />
+                        <Button layoutX="300" layoutY="606" mnemonicParsing="false" onAction="#printButton" text="print" />
+                        <VBox fx:id="weirdBox" layoutX="400" layoutY="10" />
+                        <Label fx:id="color_label" layoutX="14.0" layoutY="542.0" prefHeight="27.0" prefWidth="580.0" text="পটভূমির রঙ " />
+                        <Label fx:id="sprite_label" layoutX="254.0" layoutY="481.0" prefHeight="27.0" prefWidth="338.0" text="Sprite Position" />
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+        <Pane prefHeight="650.0" prefWidth="76.0" style="-fx-background-color: #99ddff;">
+            <children>
+                <Circle fx:id="circle3" fill="DODGERBLUE" layoutX="38.0" layoutY="174.0" onMouseClicked="#initControllerButton" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #ff8000;" />
+                <Circle fx:id="circle4" fill="DODGERBLUE" layoutX="38.0" layoutY="245.0" onMouseClicked="#init_sound" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #ffff00;" />
+                <Circle fx:id="circle5" fill="DODGERBLUE" layoutX="38.0" layoutY="311.0" onMouseClicked="#initConditionButton" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #1971cc;" />
+                <Circle fx:id="circle6" fill="DODGERBLUE" layoutX="38.0" layoutY="373.0" onMouseClicked="#initVariable" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #56255B;" />
+                <Circle fx:id="circle7" fill="DODGERBLUE" layoutX="38.0" layoutY="439.0" onMouseClicked="#init_change_sprite" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #339933;" />
+                <Circle fx:id="circle8" fill="DODGERBLUE" layoutX="38.0" layoutY="509.0" onMouseClicked="#show_help" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #996633;" />
+                <Circle fx:id="circle2" fill="DODGERBLUE" layoutX="38.0" layoutY="110.0" onMouseClicked="#init_looks" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #9900cc;" />
+                <Circle fx:id="circle9" fill="DODGERBLUE" layoutX="38.0" layoutY="576.0" onMouseClicked="#openPaint" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #ff3300;" />
+                <Circle fx:id="circle1" fill="DODGERBLUE" layoutX="38.0" layoutY="50.0" onMouseClicked="#init_motion" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #6699ff; -fx-cursor: hand;" />
+            </children>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Pane>
+        <ScrollPane layoutX="122.0" prefHeight="650.0" prefWidth="228.0" style="-fx-background-color: #99cc00;">
+            <content>
+                <AnchorPane minHeight="1600.0" minWidth="228.0" prefHeight="628.0" prefWidth="228.0" style="-fx-background-color: #CCE6FF">
+                    <children>
+                        <VBox fx:id="vb" prefHeight="1675.0" prefWidth="228.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <ScrollPane fitToHeight="true" layoutX="350.0" prefHeight="650.0" prefWidth="250.0" style="-fx-border-color: blue">
+            <content>
+                <AnchorPane fx:id="codeAnchor" minHeight="5651.0" minWidth="0.0" prefHeight="658.0" prefWidth="251.0" style="-fx-background-color: #C6ECC6">
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+
+        <Pane layoutX="76.0" prefHeight="650.0" prefWidth="46.0" style="-fx-background-color: #8fd175;">
+            <children>
+                <Label layoutX="10.0" layoutY="34.0" rotate="-90.0" text="গতি">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="11.0" layoutY="97.0" rotate="-90.0" text="রূপ">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="6.0" layoutY="165.0" rotate="-90.0" text="ঘটনা">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="-2.0" layoutY="220.0" prefHeight="24.0" prefWidth="50.0" rotate="-90.0" text="সুর">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="1.0" layoutY="292.0" rotate="-90.0" text="নিয়ন্ত্রণ">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="7.0" layoutY="355.0" rotate="-90.0" text="চলক">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="-6.0" layoutY="430.0" rotate="-90.0" text="পরিবর্তন">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="-3.0" layoutY="504.0" rotate="-90.0" text="সহায়তা">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutY="580.0" rotate="-90.0" text="রং তুলি">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="600.0" layoutY="580.0" prefHeight="80.0" prefWidth="600.0">
+            <children>
+                <StackPane maxHeight="80.0" maxWidth="300.0" minHeight="80.0" minWidth="300.0" onMouseClicked="#write" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #FF7F50;">
+                    <children>
+                        <Label text="কোড সেভ করো">
+                            <font>
+                                <Font name="BenSenHandwriting" size="39.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </StackPane>
+                <StackPane layoutX="300" maxHeight="80.0" maxWidth="300.0" minHeight="80.0" minWidth="300.0" onMouseClicked="#loadAgain" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #FF8C00;">
+                    <children>
+                        <Label text="মূল স্ক্রিনে ফিরে যাও">
+                            <font>
+                                <Font name="BenSenHandwriting" size="39.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </StackPane>
+            </children>
+        </Pane>
+    </children>
+</Pane>
