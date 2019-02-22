@@ -1,0 +1,18 @@
+
+/*
+#frontpane{
+    -fx-background-color:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+*/
+
+#frontpane{
+    -fx-background-color: linear-gradient(to right top, #000000, #3e111c, #781127, #b31126, #eb2512);
+}
+
+/*#frontlabel{
+   -fx-text-fill:  linear-gradient(to right top, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+}*/
+
+#frontlabel{
+    -fx-text-fill: white;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="frontPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FrontGUIController">
+   <children>
+      <ImageView fx:id="specimage" fitHeight="348.0" fitWidth="730.0" layoutX="226.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="702.0" layoutY="412.0" prefHeight="172.0" prefWidth="172.0" text="পূর্বের কোড" textFill="WHITE">
+         <font>
+            <Font name="BenSenHandwriting" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="codeLabel" layoutX="377.0" layoutY="412.0" prefHeight="172.0" prefWidth="172.0" text="নতুন কোড" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="BenSenHandwriting" size="46.0" />
+         </font>
+      </Label>
+      <Circle fx:id="circle1" centerX="463.0" centerY="498.0" fill="#ff1f1f" onMouseClicked="#goToCode" opacity="0.5" radius="86.1" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle2" fill="#ff1f1f" layoutX="788.0" layoutY="498.0" onMouseClicked="#goToLoad" opacity="0.51" radius="86.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fx:id="frontimage" fitHeight="277.0" fitWidth="643.0" layoutX="250.0" layoutY="-45.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>

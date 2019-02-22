@@ -1,0 +1,25 @@
+/*#up_pane{
+    -fx-background-color: linear-gradient(to right top, #000000, #3e111c, #781127, #b31126, #eb2512);
+}*/
+/*#left_pane{
+    -fx-background-color: linear-gradient(to right top, #000000, #3e111c, #781127, #b31126, #eb2512);
+}*/
+#left_pane{
+    -fx-background-color: black;
+}
+#right_pane{
+    -fx-background-color: linear-gradient(to right top, #000000, #3e111c, #781127, #b31126, #eb2512);
+}
+
+/*#down_pane{
+    -fx-background-color: linear-gradient(to right top, #000000, #3e111c, #781127, #b31126, #eb2512);
+}*/
+#cen{
+    -fx-background-color: linear-gradient(to right top, #000000, #3e111c, #781127, #b31126, #eb2512);
+}
+
+/*
+#main_pane{
+    -fx-background-color: linear-gradient(to right top, #000000, #3e111c, #781127, #b31126, #eb2512);
+
+}*/

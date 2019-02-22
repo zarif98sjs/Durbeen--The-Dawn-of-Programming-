@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane fx:id="main_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane fx:id="cen" layoutX="145.0" prefHeight="650.0" prefWidth="910.0" />
+      <VBox fx:id="cen_pen" layoutX="300.0" layoutY="110.0" prefHeight="430.0" prefWidth="600.0" style="-fx-border-color: #FFFFFF; -fx-background-color: #FFFFFF;" />
+      <Pane fx:id="left_pane" prefHeight="650.0" prefWidth="145.0">
+         <children>
+            <ToggleButton fx:id="drawbtn" layoutX="6.0" layoutY="59.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #e63900;" text="আঁক" textFill="WHITE">
+               <font>
+                  <Font name="BenSenHandwriting" size="22.0" />
+               </font></ToggleButton>
+            <ToggleButton fx:id="rubberbtn" layoutX="6.0" layoutY="122.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #ff8000;" text="রাবার">
+               <font>
+                  <Font name="BenSenHandwriting" size="22.0" />
+               </font></ToggleButton>
+            <ToggleButton fx:id="linebtn" layoutX="6.0" layoutY="189.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #e63900;" text="রেখা" textFill="WHITE">
+               <font>
+                  <Font name="BenSenHandwriting" size="22.0" />
+               </font></ToggleButton>
+            <ToggleButton fx:id="rectbtn" layoutX="6.0" layoutY="256.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #ff8000;" text="চতুর্ভুজ">
+               <font>
+                  <Font name="BenSenHandwriting" size="22.0" />
+               </font></ToggleButton>
+            <ToggleButton fx:id="circlebtn" layoutX="6.0" layoutY="325.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #e63900;" text="বৃত্ত" textFill="WHITE">
+               <font>
+                  <Font name="BenSenHandwriting" size="22.0" />
+               </font></ToggleButton>
+            <ToggleButton fx:id="ellipsebtn" layoutX="8.0" layoutY="398.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #ff8000;" text="উপবৃত্ত">
+               <font>
+                  <Font name="BenSenHandwriting" size="22.0" />
+               </font></ToggleButton>
+            <ToggleButton fx:id="textbtn" layoutX="6.0" layoutY="465.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #e63900;" text="লেখা" textFill="WHITE">
+               <font>
+                  <Font name="BenSenHandwriting" size="22.0" />
+               </font></ToggleButton>
+            <TextArea fx:id="text" layoutX="12.0" layoutY="526.0" prefHeight="55.0" prefWidth="119.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="right_pane" layoutX="1055.0" prefHeight="650.0" prefWidth="145.0">
+         <children>
+            <ColorPicker fx:id="cpLine" layoutX="17.0" layoutY="179.0" />
+            <ColorPicker fx:id="cpFill" layoutX="15.0" layoutY="325.0" />
+            <Label fx:id="line_color" layoutX="10.0" layoutY="125.0" prefHeight="42.0" prefWidth="130.0" text="  রেখার রঙ" textFill="#c9f8d7">
+               <font>
+                  <Font name="BenSenHandwriting" size="30.0" />
+               </font></Label>
+            <Label fx:id="fill_color" layoutX="8.0" layoutY="274.0" prefHeight="42.0" prefWidth="130.0" text="  ফিলার রঙ" textFill="#ffcfcf">
+               <font>
+                  <Font name="BenSenHandwriting" size="30.0" />
+               </font></Label>
+            <Slider fx:id="slider" layoutX="3.0" layoutY="452.0" />
+            <Label fx:id="line_width" layoutX="15.0" layoutY="425.0" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #b30000;" text="3.0" textFill="WHITE" />
+         </children></Pane>
+      <Pane fx:id="down_pane" layoutX="145.0" layoutY="583.0" prefHeight="67.0" prefWidth="910.0">
+         <children>
+            <Button fx:id="undo" layoutX="33.0" layoutY="14.0" mnemonicParsing="false" text="পূর্বে যাও">
+               <font>
+                  <Font name="BenSenHandwriting" size="22.0" />
+               </font></Button>
+            <Button fx:id="redo" layoutX="193.0" layoutY="14.0" mnemonicParsing="false" text="পরে যাও">
+               <font>
+                  <Font name="BenSenHandwriting" size="22.0" />
+               </font></Button>
+            <Button fx:id="open" layoutX="654.0" layoutY="14.0" mnemonicParsing="false" text="ছবি খুল">
+               <font>
+                  <Font name="BenSenHandwriting" size="22.0" />
+               </font></Button>
+            <Button fx:id="save" layoutX="799.0" layoutY="14.0" mnemonicParsing="false" text="ছবি সেভ">
+               <font>
+                  <Font name="BenSenHandwriting" size="22.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Label fx:id="up_pane" layoutX="145.0" prefHeight="78.0" prefWidth="910.0" text="                            রঙ তুলি" textFill="#cfd0f8">
+         <font>
+            <Font name="BenSenHandwriting" size="56.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

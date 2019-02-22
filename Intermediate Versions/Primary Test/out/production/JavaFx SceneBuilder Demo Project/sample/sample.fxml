@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <VBox prefHeight="298.0" prefWidth="221.0">
+            <children>
+                <HBox prefHeight="59.0" prefWidth="222.0">
+                    <children>
+                        <Button fx:id="a1" contentDisplay="TOP" mnemonicParsing="false" onAction="#lc_motion" pickOnBounds="false" prefHeight="62.0" prefWidth="109.0" text="Motion" textFill="#7a2828" textOverrun="CLIP" />
+                        <Button fx:id="id1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#likhbo" prefHeight="60.0" prefWidth="113.0" text="Events" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="222.0">
+                    <children>
+                        <Button fx:id="a2" mnemonicParsing="false" onAction="#lc_looks" prefHeight="62.0" prefWidth="109.0" text="Looks" />
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="113.0" text="Control" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="69.0" prefHeight="59.0" prefWidth="222.0">
+                    <children>
+                        <Button defaultButton="true" mnemonicParsing="false" prefHeight="62.0" prefWidth="109.0" text="Sound" />
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="113.0" text="Sensing" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="128.0" prefHeight="59.0" prefWidth="222.0">
+                    <children>
+                        <Button mnemonicParsing="false" prefHeight="62.0" prefWidth="109.0" text="Pen" />
+                        <Button defaultButton="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="113.0" text="Operators" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="187.0" prefHeight="59.0" prefWidth="222.0">
+                    <children>
+                        <Button defaultButton="true" mnemonicParsing="false" prefHeight="62.0" prefWidth="109.0" text="Data" />
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="113.0" text="Blocks++" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Label fx:id="mymsg" layoutX="323.0" layoutY="144.0" prefHeight="117.0" prefWidth="168.0" />
+      <AnchorPane layoutX="220.0" layoutY="294.0" prefHeight="503.0" prefWidth="880.0" />
+      <VBox layoutY="294.0" prefHeight="503.0" prefWidth="221.0">
+         <children>
+            <HBox prefHeight="43.0" prefWidth="221.0">
+               <children>
+                  <Button fx:id="b1" mnemonicParsing="false" onAction="#shamne_ja" prefHeight="43.0" prefWidth="150.0" />
+                  <TextField fx:id="t1" prefHeight="45.0" prefWidth="93.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="221.0">
+               <children>
+                  <Button fx:id="b2" mnemonicParsing="false" onAction="#daane_ghur" prefHeight="53.0" prefWidth="140.0" />
+                  <TextField fx:id="t2" prefHeight="43.0" prefWidth="82.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="53.0" prefHeight="43.0" prefWidth="221.0">
+               <children>
+                  <Button fx:id="b3" mnemonicParsing="false" onAction="#go_to" prefHeight="53.0" prefWidth="140.0" text="Go To" />
+                  <TextField fx:id="t3" prefHeight="43.0" prefWidth="82.0" promptText="X" />
+                  <TextField fx:id="t4" layoutX="150.0" layoutY="10.0" prefHeight="43.0" prefWidth="82.0" promptText="Y" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Rectangle fx:id="sprite" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="127.0" layoutX="369.0" layoutY="117.0" stroke="#1b0000" strokeType="INSIDE" width="113.0" />
+      <Text fx:id="text1" fill="#862020" layoutX="369.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+    </children>
+</Pane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.Font?>
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane prefHeight="650.0" prefWidth="76.0" style="-fx-background-color: #99ddff;">
+            <children>
+                <Circle fill="DODGERBLUE" layoutX="38.0" layoutY="174.0" onMouseClicked="#initControllerButton" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #ff00ff;" />
+                <Circle fill="DODGERBLUE" layoutX="38.0" layoutY="245.0" onMouseClicked="#init_sound" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #ffff00;" />
+                <Circle fill="DODGERBLUE" layoutX="38.0" layoutY="311.0" onMouseClicked="#initConditionButton" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #ff9900;" />
+                <Circle fill="DODGERBLUE" layoutX="38.0" layoutY="373.0" onMouseClicked="#initVariable" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #99ff33;" />
+                <Circle fill="DODGERBLUE" layoutX="38.0" layoutY="439.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #339933;" />
+                <Circle fill="DODGERBLUE" layoutX="38.0" layoutY="509.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #996633;" />
+                <Circle fill="DODGERBLUE" layoutX="38.0" layoutY="110.0" onMouseClicked="#init_looks" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #9900cc;" />
+                <Circle fill="DODGERBLUE" layoutX="38.0" layoutY="576.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #ff3300;" />
+                <Circle fx:id="c1" fill="DODGERBLUE" layoutX="38.0" layoutY="50.0" onMouseClicked="#init_motion" radius="23.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #6699ff; -fx-cursor: hand;" />
+            </children>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Pane>
+        <ScrollPane layoutX="122.0" prefHeight="650.0" prefWidth="228.0" style="-fx-background-color: #99cc00;">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="628.0" prefWidth="228.0">
+                    <children>
+                        <VBox fx:id="vb" prefHeight="626.0" prefWidth="228.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <ScrollPane layoutX="350.0" prefHeight="650.0" prefWidth="250.0">
+            <content>
+                <AnchorPane fx:id="codeAnchor" minHeight="0.0" minWidth="0.0" prefHeight="647.0" prefWidth="245.0">
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <Pane fx:id="paneForImage" layoutX="600.0" layoutY="0.0" prefHeight="650.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="yes" fitHeight="50.0" fitWidth="50.0" layoutX="600.0" layoutY="0.0" pickOnBounds="true" />
+            <ImageView fx:id="no" fitHeight="50.0" fitWidth="50.0" layoutX="550.0" layoutY="0.0" pickOnBounds="true" />
+            <Button layoutX="14.0" layoutY="606.0" mnemonicParsing="false" onAction="#deleteLast" text="deleteLast" />
+         </children></Pane>
+      <Pane layoutX="76.0" prefHeight="650.0" prefWidth="46.0" style="-fx-background-color: #8fd175;">
+         <children>
+            <Label layoutX="-6.0" layoutY="34.0" rotate="-90.0" text="MOTION">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutY="102.0" rotate="-90.0" text="LOOKS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+             <Label layoutY="163.0" rotate="-90.0" text="EVENT">
+                 <font>
+                     <Font name="System Bold" size="14.0" />
+                 </font>
+             </Label>
+             <Label layoutX="-4.0" layoutY="230.0" prefHeight="24.0" prefWidth="50.0" rotate="-90.0" text="SOUND">
+                 <font>
+                     <Font name="System Bold" size="14.0" />
+                 </font>
+             </Label>
+         </children>
+      </Pane>
+    </children>
+</Pane>
