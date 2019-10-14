@@ -1,19 +1,26 @@
-Primary Test Version.
+# Project
+Durbeen - The Dawn of Programming <br>
+Inspired from [Scratch](https://scratch.mit.edu/)
 
-Only Move , Rotate and Say Works With a Rectangle as test Sprite.
+# Programming Language
+Java accomapnied by [JavaFX](https://openjfx.io/)
 
-Clone Button Test Version Added Also.
+# Motivation
+When we were told to do a project in our OOP (Object Oriented Programming) sessional , we were thinking of doing something different other than the stereotyped Management type projects others were doing . So we got this idea of doing a bangla programming learning platform which was inspired from Scratch .
 
-Dynamic Scroll Pane with Clone Button.
+# Feature
 
-New UI Added (Works Properly after Threading Added : New UI Ver 4.0).
+# Screenshot
 
-JDK9 added as JShell is needed (New UI Ver 5.0).
+# How to use
 
-Multiple Events can be added but few glitch.
+# Future Plan
 
-Muliple Event Works OK , Front Page Added, Color Code Added , File Chooser Updated.
+# Project Team
+* Sheikh Azizul Hakim ; ID - 1705002
+* Md. Zarif Ul Alam   ; ID - 1705010
 
-Updated save feature of game (New UI Ver 9.0).
+Computer Science & Engineering Department , BUET
 
-Added Paint (New UI Version 10.0). 
+# Project Supervisor 
+* [Dr. Mohammad Saifur Rahman](https://cse.buet.ac.bd/faculty_list/detail/mrahman)
