@@ -28,3 +28,8 @@ does nothing
 src\trivial.txt
 src\img\catsp.png
 null
+newFile(1)
+File Description
+src\newFile(1).txt
+src\img\catsp.png
+H:\ASD TEST PIC\track3.png
